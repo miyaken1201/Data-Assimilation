@@ -249,13 +249,6 @@ def main():
     plt.savefig('Global_Mean_Inflation_Last_Decade.png', dpi=600)
 
     ## スピンアップ期間を除いたInflation平均 (Land/Ocean) をprior varianceごとに表示
-    # for prior_var, metrics in adaptive_results.items():
-    #     inflation_params = metrics["inflation_params"]
-    #     inflation_params_land = (np.mean(inflation_params[spinup_cycles:, 0:20]) - 1) * 100
-    #     inflation_params_ocean = (np.mean(inflation_params[spinup_cycles:, 20:40]) - 1) * 100
-    #     label = f"{np.sqrt(prior_var):.3f}^2"
-    #     print(f"{label} Land Inflation Mean (post spin-up): {inflation_params_land:.4f}%")
-    #     print(f"{label} Ocean Inflation Mean (post spin-up): {inflation_params_ocean:.4f}%")
 
 
     ## --------------------------------------------------------------------------------
