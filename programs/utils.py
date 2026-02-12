@@ -83,7 +83,7 @@ class StateArray:
         else:
             raise ValueError("Unknown method: {}".format(self.method))
 
-# 与えらえたNの個数に基づいて、変数j個×N個のガウシアンノイズをリストで返すメソッド
+# 与えられたNの個数に基づいて、変数j個×N個のガウシアンノイズをリストで返すメソッド
 def generate_gaussian_noise(j=40, N=1000, mean=0.0, std=1.0):
     """
     N個のガウシアンノイズを生成する関数
