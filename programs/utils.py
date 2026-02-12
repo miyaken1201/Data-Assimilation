@@ -1,6 +1,5 @@
 # 各種メソッドの定義
 import numpy as np
-import matplotlib.pyplot as plt
 
 ## Lorenz96モデルの定義
 def L96(x, F):
