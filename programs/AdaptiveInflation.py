@@ -90,7 +90,7 @@ def main():
     else:
         true_state = StateArray(N, F, dt_model, method='rk4', random_seed=1234)
         true_states = []
-        for cycle in tqdm(range(100 * 365 * int(dt_per_day / dt_assim)), desc="Spin-up true states"):
+        for _ in tqdm(range(100 * 365 * int(dt_per_day / dt_assim)), desc="Spin-up true states"):
             for _ in range(steps_per_assim):
                 true_state.step()
         for cycle in tqdm(range(total_cycles), desc="Generate true states"):
